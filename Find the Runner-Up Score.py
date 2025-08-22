@@ -18,10 +18,10 @@ def runner_up(array_students):
             continue
     print(runner_up)
             
-if __name__ == '__main__':
-    n = int(input())
-    arr = map(int, input().split())
-    runner_up(arr)
+
+n = int(input())
+arr = map(int, input().split())
+runner_up(arr)
 
 
         
