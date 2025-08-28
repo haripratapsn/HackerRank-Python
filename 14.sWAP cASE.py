@@ -20,10 +20,17 @@
 
 
 def swap_case(s):
-    pass
-
-
-
+    new_str=[]
+    for word in s:
+        if word.isalpha():
+            if word.islower():
+                new_str.append(word.upper())
+            else:
+                new_str.append(word.lower())
+        else:
+            new_str.append(word)
+    return "".join(new_str)
+                
 
 if __name__=='__main__':
     s=input()
