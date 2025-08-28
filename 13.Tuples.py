@@ -6,3 +6,18 @@
 
 # The first line contains an integer,n , denoting the number of elements in the tuple.
 # The second line contains n space-separated integers describing the elements in tuple t.
+
+# Sample Input 0
+
+# 2
+# 1 2
+# Sample Output 0
+
+# 3713081631934410656
+
+
+# use python2
+if __name__ == '__main__':
+    n = int(raw_input())
+    integer_list = map(int, raw_input().split())
+    print(hash(tuple(integer_list)))
